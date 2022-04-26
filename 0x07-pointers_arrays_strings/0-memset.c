@@ -1,21 +1,12 @@
 #include "main.h"
 
 /**
- *  * _memset - fills string with constant char b upto n bytes
- *   * @s: input pointer to string
- *    * @b: constant char
- *     * @n: number of bytes
- *      * Return: pointer to s string
- *       */
-
-char *_memset(char *s, char b, unsigned int n)
+ * set_string - a function that sets the value of a pointer to a char.
+ * @s: double pointer to a string
+ * @to: pointer to the string to set s to
+ * Return: Description of the returned value
+ */
+void set_string(char **s, char *to)
 {
-		unsigned int i = 0;
-
-			while (i < n)
-					{
-								s[i] = b;
-										i++;
-											}
-				return (s);
+	*s = to;
 }
